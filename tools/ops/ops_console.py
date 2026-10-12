@@ -8,7 +8,7 @@
   heartbeat {"device", "ip", "uptime"}
   point     {"device", "point", "raw", "scale", "alarm"}
 
-运行：..\\.venv\\Scripts\\python.exe ops_console.py [config.yaml] [--snapshot N]
+运行：先激活项目 venv（../.venv/Scripts/Activate.ps1），再 python ops_console.py [config.yaml] [--snapshot N]
 依赖：paho-mqtt>=2,<3  rich>=13  pyyaml
 """
 

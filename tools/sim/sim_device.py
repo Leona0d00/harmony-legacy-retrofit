@@ -5,7 +5,7 @@
 流程：boot -> 周期心跳（默认 15s）-> 每秒 3 点位（温度/湿度/状态）；
 --alarm 时第 8 秒起温度拉到 850（超过阈值 800）并持续告警。
 
-运行：..\\.venv\\Scripts\\python.exe sim_device.py [config.yaml]
+运行：先激活项目 venv（../.venv/Scripts/Activate.ps1），再 python sim_device.py [config.yaml]
       [--device 名称] [--interval 15] [--duration 0] [--alarm]
 依赖：paho-mqtt>=2,<3  pyyaml
 """

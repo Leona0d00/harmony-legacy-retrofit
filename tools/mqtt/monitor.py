@@ -13,6 +13,9 @@ from pathlib import Path
 import yaml
 import paho.mqtt.client as mqtt
 
+# 行缓冲：作为后台任务/重定向运行时，保证日志实时可见
+sys.stdout.reconfigure(line_buffering=True)
+
 CONFIG_DEFAULT = Path(__file__).resolve().parent.parent / "config.yaml"
 
 
